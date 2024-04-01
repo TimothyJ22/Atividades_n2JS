@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de idades</title>
+</head>
+<body style="text-align: center;">
+    <h1>Classificação de Idade</h1>
+    <input type="number" name="idad" id="idad" placeholder="Insira sua idade">
+    <button type="button" onclick="calcular()">Inserir</button>
+
+    <script>
+        function calcular(){
+            var n1 = document.querySelectorAll("input")[0].value;
+            if (n1 <= 10){
+                alert("O indivíduo é uma criança, não está em maioridade penal")
+            }
+
+            if (n1 == 11){
+                alert("O indivíduo é um pré-adolescente, não está em maioridade penal")
+            }
+            
+           else if (n1 >= 12 && n1 <= 17){
+                alert("O indivíduo é um adolescente, não está em maioridade penal")
+            }
+
+           
+           else if (n1 >= 18 && n1<= 60){
+                alert("O indivíduo é um adulto e está sucessível a maioridade penal")
+            }
+
+            else if (n1 >= 61) {
+                alert("O indivíduo é um idoso e está sucessível a maioridade penal")
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
